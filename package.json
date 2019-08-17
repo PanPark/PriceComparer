@@ -1,0 +1,53 @@
+{
+  "name": "airbnb-visualization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/rollup -c",
+    "watch": "node_modules/.bin/rollup -c --watch",
+    "server": "node_modules/.bin/http-server -a localhost -p 8000 .",
+    "start": "npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PanPark/PriceComparer"
+  },
+  "author": "Pan Parker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PanPark/PriceComparer/issues"
+  },
+  "homepage": "https://github.com/PanPark/PriceComparern#readme",
+  "devDependencies": {
+    "@types/d3-array": "^1.0.5",
+    "@types/d3-axis": "^1.0.5",
+    "@types/d3-collection": "^1.0.4",
+    "@types/d3-color": "^1.0.4",
+    "@types/d3-dispatch": "^1.0.4",
+    "@types/d3-drag": "^1.0.5",
+    "@types/d3-dsv": "^1.0.29",
+    "@types/d3-ease": "^1.0.4",
+    "@types/d3-format": "^1.0.5",
+    "@types/d3-geo": "^1.2.3",
+    "@types/d3-interpolate": "^1.1.5",
+    "@types/d3-path": "^1.0.4",
+    "@types/d3-queue": "^3.0.4",
+    "@types/d3-random": "^1.0.5",
+    "@types/d3-request": "^1.0.1",
+    "@types/d3-scale": "^1.0.4",
+    "@types/d3-scale-chromatic": "^1.0.1",
+    "@types/d3-selection": "^1.0.5",
+    "@types/d3-shape": "^1.0.5",
+    "@types/d3-time": "^1.0.4",
+    "@types/d3-timer": "^1.0.5",
+    "@types/d3-transition": "^1.0.5",
+    "@types/d3-zoom": "^1.0.5",
+    "@types/whatwg-fetch": "0.0.32",
+    "http-server": "^0.9.0",
+    "rollup": "^0.36.3",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-watch": "^2.5.0",
+    "typescript": "^2.0.3"
+  }
+}

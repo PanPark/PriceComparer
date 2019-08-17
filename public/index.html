@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>(F)AIRBNB</title>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div class="main vertical">
+            <div class="section border-bottom" id="section-logo">
+                <div class="inner section horizontal">
+                    <img src="images/logo-arrow.png" id="logo" height="30" />
+                    <span class="slogan">
+                        Comparing Airbnb and Trulia prices in San Francisco
+                    </span>
+                    <span class="spacer"></span>
+                    <span class="menu-item help price" data-help-view="views/variable-price-help.html">Price</span>
+                    <span class="menu-item help markup" data-help-view="views/variable-markup-help.html">Markup</span>
+                    <span class="menu-item info about" data-help-view="views/about.html">About</span>
+                </div>
+            </div>
+            <div class="section horizontal border-bottom" id="section-top">
+                <div class="section vertical border-right" id="map">
+                    <div class="title">
+                        <span class="text">Map</span>
+                        <div class="section-help" data-help-view="views/map-help.html">?</div>
+                    </div>
+                    <div class="content"></div>
+                </div>
+                <div class="section vertical border-right" id="scatter-plot">
+                    <div class="title">
+                        <span class="text">Scatter Plot</span>
+                        <div class="section-help" data-help-view="views/scatter-plot-help.html">?</div>
+                    </div>
+                    <div class="content">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div class="section vertical" id="panel-right">
+                    <div class="section vertical" id="selection">
+                        <div class="title">
+                            <span class="text">Selection</span>
+                            <div class="section-help" data-help-view="views/selection-help.html">?</div>
+                            <div class="selection-links" style="display:none">
+                                <span>&bull; </span>
+                                <a class="reset" href="javascript:void(0)">Reset</a>
+                                <span> &bull; </span>
+                                <a class="apply-filter" href="javascript:void(0)">Use as Filter</a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="selection-container">
+                                <div class="selection-list selection-neighborhoods"></div>
+                                <div class="selection-list selection-listings"></div>
+                                <div class="selection-list selection-price-blocks"></div>
+                                <div class="selection-list selection-markup-blocks"></div>
+                                <div class="selection-list selection-amenities"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section vertical" id="filters">
+                        <div class="title">
+                            <span class="text">Filters</span>
+                            <div class="section-help" data-help-view="views/filters-help.html">?</div>
+                            <div class="filter-links" style="display:none">
+                                <span>&bull; </span>
+                                <a class="reset" href="javascript:void(0)">Reset</a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <table id="filter-controls">
+                                <tr>
+                                    <td><select multiple class="filter-control filter-neighborhoods"></select></td>
+                                    <td><select multiple class="filter-control filter-amenities"></select></td>
+                                </tr>
+                                <tr>
+                                    <td><select multiple class="filter-control filter-price-blocks"></select></td>
+                                    <td><select multiple class="filter-control filter-markup-blocks"></select></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="section vertical" id="details">
+                        <div class="title">
+                            <span class="text">Details</span>
+                            <div class="section-help" data-help-view="views/details-help.html">?</div>
+                        </div>
+                        <div class="content">
+                            <div id="detail-listing-count" class="detail">
+                                <span class="detail-name">Number of Listings:</span>
+                                <span class="detail-value"></span>
+                            </div>
+                            <div id="detail-median-price" class="detail">
+                                <span class="detail-name">Airbnb Price:</span>
+                                <span class="detail-value"></span>
+                            </div>
+                            <div id="detail-median-trulia-price" class="detail">  
+                                <span class="detail-name">Trulia Price:</span>
+                                <span class="detail-value"></span>
+                            </div>
+                            <div id="detail-amenities" class="detail">  
+                                <div class="detail-name">
+                                    <span>Amenities:</span>
+                                    <div class="detail-name-subinfo"></div>
+                                </div>
+                                <div class="detail-value"></div>
+                            </div> 
+                            <div id="detail-listing-link" class="detail">                            
+                                <span class="detail-name">Airbnb:</span>
+                                <a href="" class="detail-value" target="_blank">View Listing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section vertical" id="listing-blocks">
+                <div class="title">
+                    <span class="text">Prices &amp; Markups</span>
+                    <div class="section-help" data-help-view="views/prices-markup-help.html">?</div>
+                </div>
+                <div class="content"></div>
+            </div>
+        </div>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="https://d3js.org/d3-drag.v1.min.js"></script>
+        <script type="text/javascript" src="../build/index.js"></script>
+    </body>
+</html>
