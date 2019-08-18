@@ -11,15 +11,15 @@
 
 ### Screenshot of Website ###
 
-![image-20190817170338411](/Users/sherrysack/Library/Application Support/typora-user-images/image-20190817170338411.png)
+![image-20190817170338411](/pics/image-20190817170338411.png)
 
-![image-20190817170437494](/Users/sherrysack/Library/Application Support/typora-user-images/image-20190817170437494.png)
+![image-20190817170437494](/pics/image-20190817170437494.png)
 
-![image-20190817170651512](/Users/sherrysack/Library/Application Support/typora-user-images/image-20190817170651512.png)
+![image-20190817170651512](/pics/image-20190817170651512.png)
 
-![image-20190817170747122](/Users/sherrysack/Library/Application Support/typora-user-images/image-20190817170747122.png)
+![image-20190817170747122](/pics/image-20190817170747122.png)
 
-![image-20190817170804602](/Users/sherrysack/Library/Application Support/typora-user-images/image-20190817170804602.png)
+![image-20190817170804602](/pics/image-20190817170804602.png)
 
 ## Development Workflow
 
